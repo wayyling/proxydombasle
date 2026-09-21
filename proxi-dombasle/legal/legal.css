@@ -1,0 +1,16 @@
+.legal-page {
+  padding: calc(var(--nav-height) + 60px) 0 100px;
+  max-width: 780px;
+}
+.legal-page h1 { font-size: clamp(2.2rem, 4vw, 3rem); margin-bottom: 30px; }
+.legal-page h2 { font-size: 1.25rem; margin-top: 40px; }
+.legal-page p { max-width: 68ch; }
+.legal-note {
+  font-size: 0.85rem;
+  font-style: italic;
+  color: var(--color-primary-dark);
+  background: var(--color-primary-light);
+  padding: 12px 16px;
+  border-radius: var(--radius-s);
+}
+.site-header .btn { margin-left: auto; }
