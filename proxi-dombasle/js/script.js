@@ -133,26 +133,4 @@
       if (e.key === "ArrowLeft") showRelative(-1);
     });
   }
-
-  /* ---------- Bandeau cookies ---------- */
-  var cookieBanner = document.querySelector(".cookie-banner");
-  var CONSENT_KEY = "proxi-dombasle-cookie-consent";
-
-  function getConsent() {
-    try { return localStorage.getItem(CONSENT_KEY); } catch (err) { return null; }
-  }
-  function setConsent(value) {
-    try { localStorage.setItem(CONSENT_KEY, value); } catch (err) { /* ignore */ }
-  }
-
-  if (cookieBanner && !getConsent()) {
-    cookieBanner.classList.add("is-visible");
-  }
-
-  document.querySelectorAll("[data-cookie-action]").forEach(function (btn) {
-    btn.addEventListener("click", function () {
-      setConsent(btn.getAttribute("data-cookie-action"));
-      cookieBanner.classList.remove("is-visible");
-    });
-  });
 })();
