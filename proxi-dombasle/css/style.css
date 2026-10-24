@@ -275,7 +275,7 @@ p { margin: 0 0 1em; color: var(--color-ink-soft); }
   background-color: #16120f;
   background-image:
     linear-gradient(180deg, rgba(16,12,10,0.72) 0%, rgba(16,12,10,0.6) 45%, rgba(16,12,10,0.82) 100%),
-    url("../images/hero-bottles.jpg");
+    url("../images/hero-bottles.webp");
   background-size: cover;
   background-position: center 30%;
 }
