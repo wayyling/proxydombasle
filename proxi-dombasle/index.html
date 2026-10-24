@@ -5,25 +5,21 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Proxi Dombasle – Épicerie à Dombasle-sur-Meurthe | Livraison 20 km</title>
 <meta name="description" content="Épicerie de proximité à Dombasle-sur-Meurthe (54110), ouverte le week-end. Alimentation générale, produits frais, boissons. Livraison à domicile dans un rayon de 20 km. ☎ 07 53 48 24 88">
-<link rel="canonical" href="https://www.proxi-dombasle.fr/">
+<link rel="canonical" href="https://proxidombasle.fr/">
 
 <!-- Open Graph -->
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Proxi Dombasle">
 <meta property="og:title" content="Proxi Dombasle – Épicerie à Dombasle-sur-Meurthe">
 <meta property="og:description" content="Épicerie de proximité ouverte le week-end à Dombasle-sur-Meurthe. Alimentation générale, produits frais, boissons. Livraison dans un rayon de 20 km.">
-<meta property="og:url" content="https://www.proxi-dombasle.fr/">
+<meta property="og:url" content="https://proxidombasle.fr/">
 <meta property="og:locale" content="fr_FR">
-<meta property="og:image" content="https://www.proxi-dombasle.fr/images/galerie/rayon-alcools-spiritueux.jpg">
+<meta property="og:image" content="https://proxidombasle.fr/images/galerie/rayon-alcools-spiritueux.jpg">
 <meta name="twitter:card" content="summary_large_image">
 
 <meta name="theme-color" content="#d9481f">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 
-<!-- Polices -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="css/style.css">
 
@@ -33,7 +29,7 @@
   "@context": "https://schema.org",
   "@type": "GroceryStore",
   "name": "Proxi Dombasle",
-  "image": "https://www.proxi-dombasle.fr/images/galerie/rayon-alcools-spiritueux.jpg",
+  "image": "https://proxidombasle.fr/images/galerie/rayon-alcools-spiritueux.jpg",
   "telephone": "+33753482488",
   "priceRange": "€€",
   "address": {
@@ -49,7 +45,7 @@
     "latitude": 48.6255099,
     "longitude": 6.3468751
   },
-  "url": "https://www.proxi-dombasle.fr/",
+  "url": "https://proxidombasle.fr/",
   "openingHoursSpecification": [
     { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday"], "opens": "10:00", "closes": "14:00" },
     { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday"], "opens": "17:00", "closes": "00:00" },
@@ -372,13 +368,11 @@
         </div>
 
         <div class="map-frame">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10548.7257664635!2d6.3468751!3d48.6255099!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xaef7e0817b40c587!2sProxi%20Super%20Dombasle!5e0!3m2!1sfr!2sfr!4v1674031448825!5m2!1sfr!2sfr"
-            title="Localisation de Proxi Dombasle sur Google Maps"
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-            allowfullscreen>
-          </iframe>
+          <div class="map-consent" id="map-consent">
+            <p>Cette carte est fournie par Google Maps. En l'affichant, vous acceptez que Google dépose des cookies et collecte des données de navigation.</p>
+            <button type="button" class="btn btn-primary" id="map-load">Afficher la carte</button>
+            <a class="map-link" href="https://maps.google.com/?q=Proxi+Super+Dombasle,+2+rue+Mathieu+de+Dombasle,+54110+Dombasle-sur-Meurthe" target="_blank" rel="noopener">Ouvrir dans Google Maps</a>
+          </div>
         </div>
       </div>
     </div>
@@ -387,6 +381,7 @@
 </main>
 
 <!-- ================= FOOTER ================= -->
+<p class="health-notice">L'abus d'alcool est dangereux pour la santé, à consommer avec modération. La vente d'alcool aux mineurs est interdite.</p>
 <footer class="site-footer">
   <div class="container">
     <div class="footer-grid">

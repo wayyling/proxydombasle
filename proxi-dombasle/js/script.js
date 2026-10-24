@@ -134,3 +134,19 @@
     });
   }
 })();
+
+/* ---------- Carte Google Maps chargée uniquement après clic (aucun cookie avant consentement) ---------- */
+(function () {
+  var btn = document.getElementById("map-load");
+  if (!btn) return;
+  btn.addEventListener("click", function () {
+    var box = document.getElementById("map-consent");
+    var iframe = document.createElement("iframe");
+    iframe.src = "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10548.7257664635!2d6.3468751!3d48.6255099!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xaef7e0817b40c587!2sProxi%20Super%20Dombasle!5e0!3m2!1sfr!2sfr!4v1674031448825!5m2!1sfr!2sfr";
+    iframe.title = "Localisation de Proxi Dombasle sur Google Maps";
+    iframe.loading = "lazy";
+    iframe.referrerPolicy = "no-referrer-when-downgrade";
+    iframe.allowFullscreen = true;
+    box.replaceWith(iframe);
+  });
+})();

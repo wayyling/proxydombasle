@@ -1,3 +1,19 @@
+/* ---------- Polices auto-hébergées (aucun appel à Google Fonts) ---------- */
+@font-face {
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("../fonts/fraunces.woff2") format("woff2-variations"), url("../fonts/fraunces.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("../fonts/inter.woff2") format("woff2-variations"), url("../fonts/inter.woff2") format("woff2");
+}
+
 /* ==========================================================================
    Proxi Dombasle — feuille de style
    ========================================================================== */
@@ -592,6 +608,20 @@ section { padding: 96px 0; }
   box-shadow: var(--shadow-card);
 }
 .map-frame iframe { width: 100%; height: 100%; min-height: 320px; border: 0; display: block; }
+.map-consent {
+  min-height: 320px; height: 100%;
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  gap: 14px; padding: 28px; text-align: center;
+  background: var(--color-paper-alt);
+}
+.map-consent p { margin: 0; max-width: 34ch; font-size: 0.92rem; }
+.map-consent .map-link { font-size: 0.9rem; text-decoration: underline; }
+
+/* ---------- Message sanitaire (loi Évin) ---------- */
+.health-notice {
+  margin: 0; padding: 10px 16px; text-align: center;
+  font-size: 0.85rem; font-weight: 600; letter-spacing: 0.01em;
+}
 
 /* ---------- CTA banner ---------- */
 .cta-banner {
