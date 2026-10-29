@@ -46,6 +46,7 @@
 * { box-sizing: border-box; }
 
 html {
+  background: var(--color-ink); /* couleur visible quand on tire la page au-delà du bas (rebond iPhone) */
   scroll-behavior: smooth;
   scroll-padding-top: var(--nav-height);
 }
